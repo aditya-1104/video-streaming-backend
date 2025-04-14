@@ -1,0 +1,17 @@
+{
+  "name": "video_streaming_app_backend",
+  "version": "1.0.0",
+  "description": "Backend for video streaming application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "node.js",
+    "backend",
+    "mongodb"
+  ],
+  "author": "Aditya Ranjan",
+  "license": "ISC"
+}
