@@ -1,0 +1,8 @@
+# folders to ignore
+/node_modules
+./dist
+
+# envelope to ignore
+*.env
+.env
+.env.*
