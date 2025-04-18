@@ -1,15 +1,20 @@
-import dotenv from "dotenv";
-import express from "express";
-import { connectDB } from "./db/dbconnect.js";
+console.log(">>> loaded index.js");
 
-dotenv.config();
-const app = express();
-connectDB();
+import { app } from "./app.js";
+import { dbConnector } from "./db/dbConnecter.js";
 
-app.get('/', (req, res) => {
-    res.send(`Backend Connected!`);
+process.on('unhandledRejection', (err) => {
+    console.error('UNHANDLED REJECTION Shutting down...', err.message);
+    process.exit(1);
 });
 
-app.listen(process.env.PORT, () => {
-    console.log(`App is listening on http://localhost:${process.env.PORT}`);
+dbConnector()
+.then(() => {
+    app.listen(process.env.PORT, () => {
+        console.log(`App is listening on http://localhost:${process.env.PORT}`);
+    });
 })
+.catch(() => {
+    console.log(`Terminating the node executing thread!`);
+    process.exit(1);
+});
