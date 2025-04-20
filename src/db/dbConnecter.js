@@ -1,4 +1,4 @@
-console.log(">>> loaded dbconnect.js");
+console.log(">>> loaded dbconnecter.js");
 
 import mongoose from "mongoose";
 

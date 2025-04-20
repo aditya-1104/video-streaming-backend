@@ -31,4 +31,7 @@ app.use((err,req,res,next) => {
     });
 });
 
+import { router } from "./routes/user.routes.js";
+app.use("/api/v1/users", router);
+
 export { app };
