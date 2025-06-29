@@ -1,4 +1,3 @@
-# video-streaming-backend
 # 🎬 Video Streaming Backend
 
 A backend system built for a video streaming application using **Node.js**, **Express.js**, and **MongoDB**.  
