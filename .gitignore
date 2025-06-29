@@ -119,5 +119,6 @@ dist
 
 # custom
 src/utils/randomTest.js 
+Status_Code.txt
 
 # End of https://mrkandreev.name/snippets/gitignore-generator/#Node
